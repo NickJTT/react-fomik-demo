@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import style from './App.module.css';
+import ResetFormData from './components/resetFormData/ResetFormData';
+// import LoadSavedData from './components/loadSavedData/LoadSavedData';
+// import SubmitButtonDisable from './components/submitButtonDisable/SubmitButtonDisable';
+// import ManualTriggerFormik from './components/manualTriggerFormik/ManualTriggerFormik';
+// import YouTubeFormik from './components/youTubeFormik/YouTubeFormik';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = { style.app }>
+      <ResetFormData/>
     </div>
   );
 }
-
-export default App;
